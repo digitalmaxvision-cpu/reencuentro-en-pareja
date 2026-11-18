@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Para dejar de pelear por lo mismo y reencontrarse en pareja</title>
+<meta name="description" content="Guía práctica + test de la pareja + cuaderno de 21 días. Herramientas simples para comunicarse mejor y resolver conflictos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/tapa-guia.jpg">
+<style>
+:root{
+  --vino:#8E1B3A; --vino2:#6E1230; --coral:#E2574C; --oro:#F2B33D;
+  --crema:#FFF8F2; --crema2:#FBEDE3; --tinta:#2B1A1F; --gris:#6B5A5F; --linea:#EAD8CF;
+  --verde:#2F7A5A;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--tinta);background:var(--crema);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:640px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;color:var(--vino2)}
+h1{font-size:clamp(30px,8vw,44px)}
+h2{font-size:clamp(25px,6.4vw,34px);margin-bottom:14px}
+h3{font-size:20px}
+em{font-style:italic;color:var(--coral)}
+section{padding:52px 0}
+.eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--vino);background:#fff;border:1px solid var(--linea);padding:6px 12px;border-radius:99px;margin-bottom:16px}
+.lead{font-size:18px;color:var(--gris);margin-top:14px}
+
+/* botón */
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:18px 20px;border-radius:16px;
+  background:linear-gradient(135deg,var(--coral),var(--vino));color:#fff;font-weight:700;font-size:18px;text-decoration:none;
+  box-shadow:0 14px 30px -14px rgba(142,27,58,.9);transition:transform .15s}
+.btn:active{transform:scale(.98)}
+.btn svg{width:20px;height:20px;fill:#fff}
+.seguro{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 14px;margin-top:12px;font-size:13px;color:var(--gris)}
+.seguro span::before{content:"✓ ";color:var(--verde);font-weight:700}
+
+/* hero */
+.hero{padding:28px 0 44px;background:radial-gradient(120% 70% at 50% 0%,#FBE3DA 0%,var(--crema) 70%)}
+.hero .tapa{width:min(78%,330px);margin:26px auto 22px;border-radius:10px;box-shadow:0 30px 50px -22px rgba(60,10,25,.55);transform:rotate(-1.5deg)}
+.precio{display:flex;align-items:baseline;justify-content:center;gap:12px;margin:4px 0 16px}
+.precio s{color:var(--gris);font-size:20px}
+.precio b{font-family:Fraunces,serif;font-size:44px;color:var(--vino)}
+.precio small{font-size:14px;color:var(--gris)}
+.center{text-align:center}
+
+/* dolores */
+.dolor{background:#fff}
+.dolor img{border-radius:18px;margin:6px 0 22px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.lista{list-style:none;display:grid;gap:12px}
+.lista li{background:var(--crema);border:1px solid var(--linea);border-radius:14px;padding:14px 16px 14px 46px;position:relative}
+.lista li::before{content:"";position:absolute;left:16px;top:18px;width:16px;height:16px;border-radius:50%;background:var(--coral);
+  -webkit-mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-9C.9 8.6 3 5 6.5 5c2 0 3.5 1.2 5.5 3.2C14 6.2 15.5 5 17.5 5 21 5 23.1 8.6 21.5 12 19 16.6 12 21 12 21z"/></svg>') center/contain no-repeat;
+          mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-9C.9 8.6 3 5 6.5 5c2 0 3.5 1.2 5.5 3.2C14 6.2 15.5 5 17.5 5 21 5 23.1 8.6 21.5 12 19 16.6 12 21 12 21z"/></svg>') center/contain no-repeat}
+.nota{margin-top:22px;font-size:17px}
+
+/* giro */
+.giro{background:var(--vino2);color:#FBEDE3}
+.giro h2{color:#fff}
+.giro p+p{margin-top:12px}
+.baile{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;margin:24px 0;text-align:center;font-size:15px}
+.baile div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:14px 10px}
+.baile b{display:block;font-family:Fraunces,serif;font-size:19px;color:var(--oro)}
+.baile .flecha{font-size:22px;color:var(--oro)}
+
+/* logros */
+.logros{display:grid;gap:12px;margin-top:8px}
+.logro{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--linea);border-radius:16px;padding:16px}
+.logro i{flex:none;width:38px;height:38px;border-radius:12px;background:var(--crema2);display:grid;place-items:center;font-style:normal;font-size:20px}
+.logro b{display:block;margin-bottom:2px}
+.logro span{color:var(--gris);font-size:15px}
+
+/* kit */
+.kit{background:#fff}
+.item{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center;padding:16px 0;border-bottom:1px dashed var(--linea)}
+.item img{border-radius:6px;box-shadow:0 10px 18px -10px rgba(60,10,25,.5)}
+.item .tag{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--coral)}
+.item h3{margin:2px 0 4px;font-size:19px}
+.item p{font-size:15px;color:var(--gris)}
+.item .val{font-size:14px;font-weight:600;color:var(--vino);margin-top:4px}
+.total{margin:22px 0 18px;background:var(--crema);border:2px solid var(--vino);border-radius:18px;padding:18px;text-align:center}
+.total .suma{color:var(--gris)}
+.total .suma s{font-weight:600}
+.total .hoy{font-family:Fraunces,serif;font-size:40px;color:var(--vino);line-height:1.1;margin-top:4px}
+.total small{display:block;color:var(--gris);font-size:13px}
+
+/* muestras */
+.carrusel{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 20px 16px;margin:0 -20px;scrollbar-width:none}
+.carrusel::-webkit-scrollbar{display:none}
+.carrusel figure{flex:0 0 68%;scroll-snap-align:center}
+.carrusel img{border-radius:10px;border:1px solid var(--linea);box-shadow:0 14px 26px -16px rgba(60,10,25,.45);background:#fff}
+.carrusel figcaption{font-size:13px;color:var(--gris);margin-top:8px;text-align:center}
+.desliza{font-size:13px;color:var(--gris);text-align:center}
+
+/* pasos */
+.pasos{display:grid;gap:14px;counter-reset:p;margin:6px 0 24px}
+.paso{counter-increment:p;display:flex;gap:14px;align-items:flex-start}
+.paso::before{content:counter(p);flex:none;width:36px;height:36px;border-radius:50%;background:var(--vino);color:#fff;display:grid;place-items:center;font-weight:700;font-family:Fraunces,serif}
+.foto{border-radius:18px;width:100%;aspect-ratio:4/3;object-fit:cover}
+
+/* para quién */
+.quien{display:grid;gap:14px}
+.caja{border-radius:16px;padding:18px;border:1px solid var(--linea);background:#fff}
+.caja h3{font-size:18px;margin-bottom:8px}
+.caja ul{padding-left:20px;display:grid;gap:6px;font-size:16px}
+.caja.no{background:var(--crema2)}
+
+/* garantía */
+.garantia{display:flex;gap:18px;align-items:center;background:#fff;border:1px solid var(--linea);border-radius:20px;padding:20px}
+.sello{flex:none;width:86px;height:86px;border-radius:50%;background:radial-gradient(circle,var(--oro),#D9901B);display:grid;place-items:center;text-align:center;color:#4A2A00;font-weight:800;line-height:1;font-size:26px;box-shadow:inset 0 0 0 4px rgba(255,255,255,.6)}
+.sello small{display:block;font-size:11px;font-weight:700;letter-spacing:.06em}
+
+/* faq */
+details{background:#fff;border:1px solid var(--linea);border-radius:14px;margin-bottom:10px}
+summary{cursor:pointer;list-style:none;padding:16px 44px 16px 16px;font-weight:600;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:16px;top:12px;font-size:24px;color:var(--coral)}
+details[open] summary::after{content:"–"}
+details p{padding:0 16px 16px;color:var(--gris);font-size:16px}
+
+/* cierre */
+.cierre{background:linear-gradient(180deg,var(--crema) 0%,#FBE3DA 100%)}
+.cierre .foto{margin-bottom:24px}
+footer{padding:28px 0 110px;text-align:center;font-size:12px;color:var(--gris)}
+footer p+p{margin-top:8px}
+
+/* barra fija */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:9;background:rgba(255,248,242,.96);backdrop-filter:blur(8px);border-top:1px solid var(--linea);
+  padding:10px 16px calc(10px + env(safe-area-inset-bottom));transform:translateY(110%);transition:transform .25s}
+.barra.ver{transform:none}
+.barra .in{max-width:640px;margin:0 auto;display:flex;align-items:center;gap:12px}
+.barra .p{line-height:1.1;font-size:13px;color:var(--gris);white-space:nowrap}
+.barra .p b{display:block;font-family:Fraunces,serif;font-size:24px;color:var(--vino)}
+.barra .btn{padding:14px 16px;font-size:16px}
+</style>
+</head>
+<body>
+
+<!-- 1. PRIMERA PANTALLA -->
+<header class="hero">
+  <div class="wrap center">
+    <span class="eyebrow">Guía práctica + 2 regalos para hacer en pareja</span>
+    <h1>¿Siempre terminan peleando <em>por lo mismo?</em></h1>
+    <p class="lead">El problema casi nunca es el tema: es el patrón. Esta guía les ayuda a reconocerlo y a cortarlo, con herramientas simples para usar 15 minutos al día.</p>
+    <img class="tapa" src="img/tapa-guia.jpg" width="640" height="960" alt="Tapa de la guía Para dejar de pelear por lo mismo y reencontrarse en pareja">
+    <div class="precio"><s>US$37</s><b>US$12</b><small>pago único</small></div>
+    <a class="btn cta" href="#">
+      <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-9C.9 8.6 3 5 6.5 5c2 0 3.5 1.2 5.5 3.2C14 6.2 15.5 5 17.5 5 21 5 23.1 8.6 21.5 12 19 16.6 12 21 12 21z"/></svg>
+      Quiero el kit
+    </a>
+    <div class="seguro"><span>Pago seguro</span><span>Lo recibes al instante en tu correo</span><span>PDF para el celular o imprimir</span></div>
+  </div>
+</header>
+
+<!-- 2. DOLORES -->
+<section class="dolor">
+  <div class="wrap">
+    <h2>¿Les suena alguna de estas?</h2>
+    <img src="img/foto-platica.jpg" loading="lazy" width="720" height="900" alt="Pareja platicando en la cocina con un café">
+    <ul class="lista">
+      <li>La misma discusión vuelve cada semana, solo cambia la excusa.</li>
+      <li>Uno quiere hablarlo ya; el otro se cierra, se va o se queda callado.</li>
+      <li>Después de pelear quedan distantes por horas, o por días.</li>
+      <li>La rutina, el trabajo y las pantallas se comieron las pláticas y el cariño.</li>
+      <li>Se quieren, pero sienten que ya no se entienden como antes.</li>
+    </ul>
+    <p class="nota">Si se reconocieron en al menos una, no son los únicos: <b>les pasa a casi todas las parejas.</b> Y se puede trabajar.</p>
+  </div>
+</section>
+
+<!-- 3. GIRO -->
+<section class="giro">
+  <div class="wrap">
+    <h2>No son incompatibles. Están atrapados en un baile.</h2>
+    <p>Casi todas las peleas que se repiten siguen el mismo paso a paso. Uno busca: insiste, pregunta, reclama. El otro se aleja: se calla, cambia de tema, sale del cuarto. Cuanto más busca uno, más se aleja el otro.</p>
+    <div class="baile">
+      <div><b>Uno busca</b>“Necesito que lo hablemos”</div>
+      <span class="flecha">⇄</span>
+      <div><b>El otro se aleja</b>“No quiero pelear”</div>
+    </div>
+    <p>Ninguno de los dos es el malo. Los dos están tratando de cuidarse. Cuando aprenden a ver el baile, pueden pararlo juntos, y la discusión deja de ser una guerra.</p>
+  </div>
+</section>
+
+<!-- 4. LOGROS -->
+<section>
+  <div class="wrap">
+    <h2>Lo que van a poder hacer</h2>
+    <div class="logros">
+      <div class="logro"><i>🔍</i><div><b>Reconocer su patrón</b><span>Ponerle nombre a la pelea que se repite y ver cuándo empieza.</span></div></div>
+      <div class="logro"><i>💬</i><div><b>Hablar sin herirse</b><span>Decir lo que les molesta sin atacar y escuchar sin defenderse.</span></div></div>
+      <div class="logro"><i>🕊️</i><div><b>Reconciliarse más rápido</b><span>Frases y pasos para reparar después de una discusión.</span></div></div>
+      <div class="logro"><i>☕</i><div><b>Volver a tener ratos para ustedes</b><span>40 preguntas para conocerse de nuevo y 30 ideas de citas.</span></div></div>
+      <div class="logro"><i>🤝</i><div><b>Ponerse de acuerdo</b><span>Una plática mensual y una hoja de acuerdos para que no se acumule nada.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. KIT -->
+<section class="kit" id="kit">
+  <div class="wrap">
+    <h2>Todo lo que reciben hoy</h2>
+    <div class="item">
+      <img src="img/tapa-guia.jpg" loading="lazy" width="640" height="960" alt="Tapa de la guía">
+      <div><span class="tag">Guía principal</span><h3>Para dejar de pelear por lo mismo y reencontrarse en pareja</h3><p>101 páginas, 13 capítulos en 4 partes, con ejercicios para hacer juntos.</p><div class="val">Valor: US$37</div></div>
+    </div>
+    <div class="item">
+      <img src="img/tapa-test.jpg" loading="lazy" width="420" height="595" alt="Tapa del test de la pareja">
+      <div><span class="tag">Regalo 1</span><h3>Test de la pareja</h3><p>20 preguntas para responder cada uno y un mapa para ver por dónde empezar.</p><div class="val">Valor: US$15</div></div>
+    </div>
+    <div class="item">
+      <img src="img/tapa-cuaderno.jpg" loading="lazy" width="420" height="595" alt="Tapa del cuaderno de 21 días">
+      <div><span class="tag">Regalo 2</span><h3>Cuaderno de 21 días</h3><p>Una tarea corta por día durante 3 semanas, con espacio para escribir.</p><div class="val">Valor: US$19</div></div>
+    </div>
+    <div class="total">
+      <div class="suma">Valor total: <s>US$71</s></div>
+      <div class="hoy">Hoy US$12</div>
+      <small>Pago único. Sin suscripciones.</small>
+    </div>
+    <a class="btn cta" href="#">Quiero el kit por US$12</a>
+  </div>
+</section>
+
+<!-- 6. MUESTRAS -->
+<section>
+  <div class="wrap">
+    <h2>Así se ve por dentro</h2>
+    <div class="carrusel">
+      <figure><img src="img/muestra-guia-3.jpg" loading="lazy" width="520" height="737" alt="Página de la guía"><figcaption>Historias en las que se van a reconocer</figcaption></figure>
+      <figure><img src="img/muestra-guia-30.jpg" loading="lazy" width="520" height="737" alt="Página de la guía con ejercicio"><figcaption>Un ejercicio en cada capítulo</figcaption></figure>
+      <figure><img src="img/muestra-test-3.jpg" loading="lazy" width="520" height="737" alt="Página del test"><figcaption>El test de la pareja</figcaption></figure>
+      <figure><img src="img/muestra-cuaderno-4.jpg" loading="lazy" width="520" height="737" alt="Página del cuaderno"><figcaption>El cuaderno de 21 días</figcaption></figure>
+    </div>
+    <p class="desliza">Desliza para ver más →</p>
+  </div>
+</section>
+
+<!-- 7. CÓMO FUNCIONA -->
+<section class="kit">
+  <div class="wrap">
+    <h2>Cómo funciona</h2>
+    <div class="pasos">
+      <div class="paso"><div><b>Compras en un minuto.</b> Pago seguro con tarjeta.</div></div>
+      <div class="paso"><div><b>Te llega al correo al instante.</b> Los 3 PDF, para el celular o para imprimir.</div></div>
+      <div class="paso"><div><b>15 minutos al día, juntos.</b> Leen un capítulo, hacen el ejercicio y anotan en el cuaderno.</div></div>
+    </div>
+    <img class="foto" src="img/foto-cuaderno.jpg" loading="lazy" width="720" height="960" alt="Pareja escribiendo juntos en un cuaderno">
+  </div>
+</section>
+
+<!-- 8. PARA QUIÉN -->
+<section>
+  <div class="wrap">
+    <h2>¿Es para nosotros?</h2>
+    <div class="quien">
+      <div class="caja"><h3>Sí, si…</h3><ul>
+        <li>Se quieren y quieren volver a entenderse.</li>
+        <li>Discuten por lo mismo y no saben cómo salir.</li>
+        <li>Quieren algo práctico, no teoría.</li>
+        <li>Son él y ella, él y él, o ella y ella: sirve igual.</li>
+      </ul></div>
+      <div class="caja no"><h3>No reemplaza…</h3><ul>
+        <li>La ayuda de un terapeuta o psicólogo.</li>
+        <li>Si en la relación hay violencia, lo primero es pedir ayuda profesional.</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. GARANTÍA (decide Gaston) -->
+<section class="kit">
+  <div class="wrap">
+    <div class="garantia">
+      <div class="sello"><div>7<small>DÍAS</small></div></div>
+      <div><h3>Garantía de 7 días</h3><p>Si lo leen y sienten que no les sirve, nos escribes dentro de los 7 días y te devolvemos el dinero.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. FAQ -->
+<section>
+  <div class="wrap">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿Sirve si solo uno de los dos quiere leerlo?</summary><p>Sí. Muchas parejas empiezan así: cuando uno cambia su paso en el baile, el otro suele notarlo. Los ejercicios para hacer juntos pueden esperar a que el otro se sume.</p></details>
+    <details><summary>¿Cómo lo recibo?</summary><p>Al instante, en el correo que pongas al pagar. Son 3 PDF que puedes leer en el celular, la computadora o imprimir.</p></details>
+    <details><summary>¿Cuánto tiempo necesito?</summary><p>Unos 15 minutos al día. El cuaderno está pensado para 21 días, pero cada pareja va a su ritmo.</p></details>
+    <details><summary>¿Es para cualquier tipo de pareja?</summary><p>Sí: novios, casados o que viven juntos; él y ella, él y él, ella y ella.</p></details>
+    <details><summary>¿Es una suscripción?</summary><p>No. Pagas una sola vez y el material es tuyo.</p></details>
+    <details><summary>¿Y si no me sirve?</summary><p>Tienes 7 días de garantía: nos escribes y te devolvemos el dinero.</p></details>
+  </div>
+</section>
+
+<!-- 11. CIERRE -->
+<section class="cierre">
+  <div class="wrap center">
+    <img class="foto" src="img/foto-abrazo.jpg" loading="lazy" width="720" height="1080" alt="Pareja abrazada sonriendo">
+    <h2>La próxima discusión puede terminar distinto</h2>
+    <p class="lead" style="margin-bottom:22px">Guía + test + cuaderno de 21 días, por menos de lo que cuesta una cena fuera.</p>
+    <div class="precio"><s>US$71</s><b>US$12</b></div>
+    <a class="btn cta" href="#">Quiero el kit</a>
+    <div class="seguro"><span>Pago seguro</span><span>Acceso inmediato</span><span>Garantía de 7 días</span></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© Reencuentro en Pareja</p>
+    <p>Este material es educativo y no reemplaza la atención de un profesional de la salud mental. Los resultados dependen de cada pareja.</p>
+    <p>Este sitio no forma parte de Facebook ni de Meta Platforms, Inc.</p>
+  </div>
+</footer>
+
+<div class="barra" id="barra"><div class="in">
+  <div class="p">Kit completo<b>US$12</b></div>
+  <a class="btn cta" href="#">Quiero el kit</a>
+</div></div>
+
+<script>
+// Link de compra: embudo de Impultienda, conservando UTMs y fbclid del anuncio.
+(function(){
+  var base = "https://visiondigital.impultienda.ar/o/ebook-parejas-mexico";
+  var url = base + (location.search || "");
+  document.querySelectorAll("a.cta").forEach(function(a){ a.href = url; });
+  // Barra fija: aparece cuando el botón de arriba sale de la pantalla.
+  var barra = document.getElementById("barra"), primero = document.querySelector(".hero .cta");
+  if ("IntersectionObserver" in window && primero) {
+    new IntersectionObserver(function(e){ barra.classList.toggle("ver", !e[0].isIntersecting && e[0].boundingClientRect.top < 0); }).observe(primero);
+  }
+})();
+</script>
+</body>
+</html>
