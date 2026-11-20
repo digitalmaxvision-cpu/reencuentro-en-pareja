@@ -53,7 +53,9 @@ section{padding:52px 0}
 /* hero */
 .hero{padding:28px 0 44px;background:radial-gradient(120% 70% at 50% 0%,#FBE3DA 0%,var(--crema) 70%)}
 .hero .tapa{width:min(78%,330px);margin:26px auto 22px;border-radius:10px;box-shadow:0 30px 50px -22px rgba(60,10,25,.55);transform:rotate(-1.5deg)}
+@media (max-width:600px){.hero{padding-top:20px}.hero .tapa{width:min(52%,200px);margin:16px auto 14px}.hero .lead{font-size:15px}}
 .precio{display:flex;align-items:baseline;justify-content:center;gap:12px;margin:4px 0 16px}
+.precio b{white-space:nowrap}.precio .mxn{font-size:.38em;letter-spacing:.04em;margin-left:4px;color:inherit}
 .precio s{color:var(--gris);font-size:20px}
 .precio b{font-family:Fraunces,serif;font-size:44px;color:var(--vino)}
 .precio small{font-size:14px;color:var(--gris)}
@@ -158,12 +160,12 @@ footer p+p{margin-top:8px}
     <h1>¿Siempre terminan peleando <em>por lo mismo?</em></h1>
     <p class="lead">El problema casi nunca es el tema: es el patrón. Esta guía les ayuda a reconocerlo y a cortarlo, con herramientas simples para usar 15 minutos al día.</p>
     <img class="tapa" src="img/tapa-guia.jpg" width="640" height="960" alt="Tapa de la guía Para dejar de pelear por lo mismo y reencontrarse en pareja">
-    <div class="precio"><s>US$37</s><b>US$12</b><small>pago único</small></div>
+    <div class="precio"><s>$689</s><b>$219<small class="mxn"> MXN</small></b><small>pago único</small></div>
     <a class="btn cta" href="#">
       <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-9C.9 8.6 3 5 6.5 5c2 0 3.5 1.2 5.5 3.2C14 6.2 15.5 5 17.5 5 21 5 23.1 8.6 21.5 12 19 16.6 12 21 12 21z"/></svg>
       Quiero el kit
     </a>
-    <div class="seguro"><span>Pago seguro</span><span>Lo recibes al instante en tu correo</span><span>PDF para el celular o imprimir</span></div>
+    <div class="seguro"><span>Garantía de 7 días</span><span>Lo recibes al instante en tu correo</span><span>Tarjeta de crédito o débito</span></div>
   </div>
 </header>
 
@@ -217,22 +219,22 @@ footer p+p{margin-top:8px}
     <h2>Todo lo que reciben hoy</h2>
     <div class="item">
       <img src="img/tapa-guia.jpg" loading="lazy" width="640" height="960" alt="Tapa de la guía">
-      <div><span class="tag">Guía principal</span><h3>Para dejar de pelear por lo mismo y reencontrarse en pareja</h3><p>101 páginas, 13 capítulos en 4 partes, con ejercicios para hacer juntos.</p><div class="val">Valor: US$37</div></div>
+      <div><span class="tag">Guía principal</span><h3>Para dejar de pelear por lo mismo y reencontrarse en pareja</h3><p>101 páginas, 13 capítulos en 4 partes, con ejercicios para hacer juntos.</p><div class="val">Valor: $689 MXN</div></div>
     </div>
     <div class="item">
       <img src="img/tapa-test.jpg" loading="lazy" width="420" height="595" alt="Tapa del test de la pareja">
-      <div><span class="tag">Regalo 1</span><h3>Test de la pareja</h3><p>20 preguntas para responder cada uno y un mapa para ver por dónde empezar.</p><div class="val">Valor: US$15</div></div>
+      <div><span class="tag">Regalo 1</span><h3>Test de la pareja</h3><p>20 preguntas para responder cada uno y un mapa para ver por dónde empezar.</p><div class="val">Valor: $279 MXN</div></div>
     </div>
     <div class="item">
       <img src="img/tapa-cuaderno.jpg" loading="lazy" width="420" height="595" alt="Tapa del cuaderno de 21 días">
-      <div><span class="tag">Regalo 2</span><h3>Cuaderno de 21 días</h3><p>Una tarea corta por día durante 3 semanas, con espacio para escribir.</p><div class="val">Valor: US$19</div></div>
+      <div><span class="tag">Regalo 2</span><h3>Cuaderno de 21 días</h3><p>Una tarea corta por día durante 3 semanas, con espacio para escribir.</p><div class="val">Valor: $349 MXN</div></div>
     </div>
     <div class="total">
-      <div class="suma">Valor total: <s>US$71</s></div>
-      <div class="hoy">Hoy US$12</div>
+      <div class="suma">Valor total: <s>$1,317 MXN</s></div>
+      <div class="hoy">Hoy $219 MXN</div>
       <small>Pago único. Sin suscripciones.</small>
     </div>
-    <a class="btn cta" href="#">Quiero el kit por US$12</a>
+    <a class="btn cta" href="#">Quiero el kit por $219</a>
   </div>
 </section>
 
@@ -255,7 +257,7 @@ footer p+p{margin-top:8px}
   <div class="wrap">
     <h2>Cómo funciona</h2>
     <div class="pasos">
-      <div class="paso"><div><b>Compras en un minuto.</b> Pago seguro con tarjeta.</div></div>
+      <div class="paso"><div><b>Compras en un minuto.</b> Pago seguro con tarjeta de crédito o débito.</div></div>
       <div class="paso"><div><b>Te llega al correo al instante.</b> Los 3 PDF, para el celular o para imprimir.</div></div>
       <div class="paso"><div><b>15 minutos al día, juntos.</b> Leen un capítulo, hacen el ejercicio y anotan en el cuaderno.</div></div>
     </div>
@@ -311,7 +313,7 @@ footer p+p{margin-top:8px}
     <img class="foto" src="img/foto-abrazo.jpg" loading="lazy" width="720" height="1080" alt="Pareja abrazada sonriendo">
     <h2>La próxima discusión puede terminar distinto</h2>
     <p class="lead" style="margin-bottom:22px">Guía + test + cuaderno de 21 días, por menos de lo que cuesta una cena fuera.</p>
-    <div class="precio"><s>US$71</s><b>US$12</b></div>
+    <div class="precio"><s>$1,317</s><b>$219<small class="mxn"> MXN</small></b></div>
     <a class="btn cta" href="#">Quiero el kit</a>
     <div class="seguro"><span>Pago seguro</span><span>Acceso inmediato</span><span>Garantía de 7 días</span></div>
   </div>
@@ -326,7 +328,7 @@ footer p+p{margin-top:8px}
 </footer>
 
 <div class="barra" id="barra"><div class="in">
-  <div class="p">Kit completo<b>US$12</b></div>
+  <div class="p">Kit completo · garantía 7 días<b>$219<small class="mxn"> MXN</small></b></div>
   <a class="btn cta" href="#">Quiero el kit</a>
 </div></div>
 
